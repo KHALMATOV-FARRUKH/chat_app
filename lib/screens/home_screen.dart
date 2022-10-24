@@ -9,6 +9,7 @@ import 'package:chat_app/widgets/glowing_action_button.dart';
 import 'package:chat_app/widgets/widgets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:stream_chat_flutter_core/stream_chat_flutter_core.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({Key? key}) : super(key: key);

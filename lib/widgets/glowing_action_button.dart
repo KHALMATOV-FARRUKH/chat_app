@@ -1,7 +1,6 @@
 import 'package:chat_app/theme.dart';
 import 'package:flutter/material.dart';
 
-
 class GlowingActionButton extends StatelessWidget {
   const GlowingActionButton({
     Key? key,
@@ -25,7 +24,7 @@ class GlowingActionButton extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: color.withOpacity(0.3),
-            spreadRadius: 10,
+            spreadRadius: 8,
             blurRadius: 24,
           ),
         ],

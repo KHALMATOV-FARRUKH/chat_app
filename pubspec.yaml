@@ -42,6 +42,9 @@ dependencies:
   jiffy: ^5.0.0
   stream_chat_flutter_core: ^5.0.0
   logger: ^1.1.0
+  stream_chat_flutter: ^5.0.1
+  stream_chat: ^5.0.0
+
 
 dev_dependencies:
   flutter_test:

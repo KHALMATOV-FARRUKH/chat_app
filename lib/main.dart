@@ -8,9 +8,11 @@ import 'package:stream_chat_flutter_core/stream_chat_flutter_core.dart';
 void main() {
   final client = StreamChatClient(streamKey);
 
-  runApp(MyApp(
-    client: client,
-  ));
+  runApp(
+    MyApp(
+      client: client,
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -24,7 +26,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       theme: AppTheme.light(),
       darkTheme: AppTheme.dark(),
       themeMode: ThemeMode.dark,
@@ -32,7 +33,11 @@ class MyApp extends StatelessWidget {
       builder: (context, child) {
         return StreamChatCore(
           client: client,
-          child: child!,
+          child: ChannelsBloc(
+            child: UsersBloc(
+              child: child!,
+            ),
+          ),
         );
       },
       home: const SelectUserScreen(),

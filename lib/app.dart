@@ -1,7 +1,16 @@
-import 'package:logger/logger.dart';
+import 'package:flutter/material.dart';
+import 'package:logger/logger.dart' as log;
+import 'package:stream_chat_flutter_core/stream_chat_flutter_core.dart';
 
+const streamKey = 'hfscu9anhkrt'; // TODO: input your Stream app key here.
 
+var logger = log.Logger();
 
-const streamKey = 'hfscu9anhkrt';
+/// Extensions can be used to add functionality to the SDK.
+extension StreamChatContext on BuildContext {
+  /// Fetches the current user image.
+  String? get currentUserImage => currentUser!.image;
 
-var logger = Logger();
+  /// Fetches the current user.
+  User? get currentUser => StreamChatCore.of(this).currentUser;
+}

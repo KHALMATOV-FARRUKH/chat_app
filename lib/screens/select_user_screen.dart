@@ -1,8 +1,9 @@
 import 'package:chat_app/models/demo_users.dart';
 import 'package:chat_app/screens/screens.dart';
-import 'package:chat_app/widgets/avatar.dart';
+import 'package:chat_app/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:stream_chat_flutter_core/stream_chat_flutter_core.dart';
+
 import '../../../app.dart';
 
 class SelectUserScreen extends StatefulWidget {
